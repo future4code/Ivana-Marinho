@@ -1,0 +1,27 @@
+.img{
+	width: 100px;
+	height: 100px;
+	border: 2px solid black;
+}
+
+body{
+	background: #6495ED;
+	color: black;
+}
+
+button:hover{
+	color: red;
+}
+
+#cab{
+	background: grey;
+	height: 50px;
+	color: white;
+	text-align: center;
+	font-size: 15pt;
+}
+
+#menu{
+	color: yellow;
+}
+

@@ -1,0 +1,40 @@
+body{
+	background: #43CD80;
+}
+.cabroda{
+	background: red;
+	color: yellow;
+	padding: 2px;
+	margin: 2px;	
+
+}
+
+#rodape{
+	margin-top: 50vh;
+	height: 30px;
+
+}
+
+.img{
+	float: right;
+	width: 300px;
+	height: 300px;
+	display: inline;
+}
+
+h2{
+	text-align: center;
+	color: yellow;
+}
+
+h3{
+	color: yellow;
+}
+
+a:hover{
+	color: pink;
+}
+
+.estoque{
+	background: white;
+}

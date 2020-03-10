@@ -1,0 +1,26 @@
+body{
+    background-color: yellowgreen;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item{
+    display: flex;
+    height: 100vh;
+    border: 1px solid black;
+    width: 100vw;
+    font-size: 1.5em;
+    color: blue;
+    left: 0;
+    flex-direction: column;
+
+}
+
+.posicionaFormulario{
+    margin-top: 2%;
+    margin-left: 30%;
+    margin-bottom: 2%;
+}

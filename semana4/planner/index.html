@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="index.js" defer></script>
+    <link href="index.css" type="text/css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+
+  <body>
+
+  <header>
+    <h1>Minha Semana</h1>
+  </header>
+
+  <form class="posicionaFormulario">
+    <label>Nova tarefa: </label>
+    <input type="text"/>
+    <select>
+      <option>Segunda</option>
+      <option>Terça</option>
+      <option>Quarta</option>
+      <option>Quinta</option>
+      <option>Sexta</option>
+      <option>Sábado</option>
+      <option>Domingo</option>
+    </select>
+    <button type="button" onclick="adicionaTarefa()">Adicionar Tarefa!</button>
+    <button type="reset" onclick="apagarTudo()">Apagar</button>
+  </form>
+
+  <section>
+  <div class="container">
+
+    <div class="item" id="seg" onclick="riscaTarefa(tarefaDigitada)"><b><u>Segunda</u></b></div>
+    <div class="item" id="ter"><b><u>Terça</u></b></div>
+    <div class="item" id="qua"><b><u>Quarta</u></b></div>
+    <div class="item" id="qui"><b><u>Quinta</u></b></div>
+    <div class="item" id="sex"><b><u>Sexta</u></b></div>
+    <div class="item" id="sab"><b><u>Sábado</u></b></div>
+    <div class="item" id="dom"><b><u>Domingo</u></b></div>
+    
+  </div>
+</section>
+   
+  </body>
+</html>

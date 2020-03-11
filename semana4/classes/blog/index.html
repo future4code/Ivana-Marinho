@@ -3,26 +3,27 @@
     <head>
         <meta chaset="utf-8">
         <title>Meu Blog</title>
-        <link rel="stylesheet" type="text/css" href="index.js">
-        <script src="index.js"></script>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="index.js" defer></script>
     </head>
     <body>
         <section>
-            <form>
+            <form action="#">
                 <label>Autor</label>
-                <input><br><br>
+                <input id="autor"><br><br>
                 
                 <label>E-mail</label>
-                <input><br><br>
+                <input id="email"><br><br>
             
                 <label>Mensagem</label>
-                <textarea></textarea><br><br>
+                <textarea id="mensagem"></textarea><br><br>
 
-                <button type="button">Criar</button>
-
+                <button onclick="onButtonClick()">Criar</button>
 
             </form>
         </section>
+
+        
     
     </body>
 </html>

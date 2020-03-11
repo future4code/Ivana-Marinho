@@ -1,21 +1,31 @@
 class Post{
-    constructor(autor, email, mensagem){
+    constructor(autor, assunto, mensagem){
         this.autor = autor;
-        this.emal = email;
+        this.assunto = assunto;
         this.mensagem = mensagem;
     }
 }
 
             this.onButtonClick = () => {
                 const autor = document.getElementById("autor");
-                const email = document.getElementById("email");
+                const assunto = document.getElementById("assunto");
                 const mensagem = document.getElementById("mensagem");
 
-                let novoPost = new Post(autor.value, email.value, mensagem.value);
+                let novoPost = new Post(autor.value, assunto.value, mensagem.value);
                 
-                console.log("Nome: " + autor.value + "\nE-mail: " + email.value + "\nMensagem: " + mensagem.value);
+                console.log("Nome: " + autor.value + "\nAssunto: " + assunto.value + "\nMensagem: " + mensagem.value);
                 
+                let arrayDePosts = [];
+                arrayDePosts.push(novoPost.autor, novoPost.assunto, novoPost.mensagem);
+                
+                console.log(arrayDePosts);
+                
+                autor.value = "";
+                assunto.value = "";
+                mensagem.value = "";
+
             }
 
+            
             
         

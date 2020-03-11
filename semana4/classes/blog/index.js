@@ -6,6 +6,8 @@ class Post{
     }
 }
 
+            let arrayDePosts = [];
+
             this.onButtonClick = () => {
                 const autor = document.getElementById("autor");
                 const assunto = document.getElementById("assunto");
@@ -15,7 +17,6 @@ class Post{
                 
                 console.log("Nome: " + autor.value + "\nAssunto: " + assunto.value + "\nMensagem: " + mensagem.value);
                 
-                let arrayDePosts = [];
                 arrayDePosts.push(novoPost.autor, novoPost.assunto, novoPost.mensagem);
                 
                 console.log(arrayDePosts);
@@ -26,6 +27,8 @@ class Post{
 
             }
 
-            
+            function incluiComentario() {
+                
+            }
             
         

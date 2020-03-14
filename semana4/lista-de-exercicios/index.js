@@ -46,4 +46,58 @@ Cria uma variável numero1 que recebe um valor infinito e outra numero2 que rece
 O que será impresso no console?
 -10
 1590
+
+
+Exercícios de Lógica de Programação
+
+1.
+For, forEach e for of.
+Exemplo:
+const lista = ["quarta", "quinta", "sexta"];
+for(let elemento of lista){
+    console.log(elemento);
+}
+
+2.
+a. false
+b. false
+c. true
+d. true
+e. true
+
+3.
+O código funciona, mas não atende ao objetivo. Do jeito que foi feito, ele entrará em loop infinito, sempre imprimindo 0. Faltou incrementar o i em 1 (i++) após o console.log.
+
 */
+
+//4.
+
+function classificaTriangulo(ladoA, ladoB, ladoC){
+    if(ladoA === ladoB && ladoA === ladoC){
+        console.log("O triângulo é equilátero");
+    }else if(ladoA === ladoB || ladoB === ladoC || ladoA === ladoC){
+        console.log("O triângulo é isósceles");    
+    }else{
+        console.log("O triâgulo é escaleno");
+    }
+}
+let nomeDoTriangulo = classificaTriangulo(1, 2, 3);
+
+
+//5.
+
+const numero1 = 100;
+const numero2 = 20;
+let maiorNumero = (numero1 > numero2 ? numero1 : numero2);
+console.log("O maior é", maiorNumero);
+
+if(numero1%numero2 === 0){
+    console.log(numero1 + " é divisível por " + numero2);
+}else{
+    console.log(numero1 + " não é divisível por " + numero2);
+}
+
+let diferenca = Math.abs(numero1 - numero2);
+console.log("A diferença entre eles é ", diferenca);
+
+

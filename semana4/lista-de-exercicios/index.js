@@ -71,7 +71,7 @@ O código funciona, mas não atende ao objetivo. Do jeito que foi feito, ele ent
 */
 
 //4.
-
+/*
 function classificaTriangulo(ladoA, ladoB, ladoC){
     if(ladoA === ladoB && ladoA === ladoC){
         console.log("O triângulo é equilátero");
@@ -99,5 +99,51 @@ if(numero1%numero2 === 0){
 
 let diferenca = Math.abs(numero1 - numero2);
 console.log("A diferença entre eles é ", diferenca);
+*/
+
+//Exercícios de Funções
+
+//1. Fiz em duas funções. Cada uma delas faz uma coisa específica.
+
+let maior = Infinity;
+let aux = 0;
+let elemento;
+function segundoMenor(array){
+    for(elemento of array){
+        if(elemento < maior){
+           aux = maior;
+           maior = elemento;  
+        }else if(elemento < aux){
+           aux = elemento;
+        }
+    }
+    return aux;
+}
+let resultado = segundoMenor([1, 2, 3, 4, 5, 6]);
+console.log("O segundo menor número é ", resultado);
+
+let menor = Number.NEGATIVE_INFINITY;
+segundoMaior = (meuArray) => {
+    for(let cadaNumero of meuArray){
+        if(cadaNumero > menor){
+            aux = menor;
+            menor = cadaNumero;
+        }else if(cadaNumero > aux){
+            aux = cadaNumero;
+        }
+
+    }
+    return aux;
+}
+resultado = segundoMaior([1, 2, 3, 4, 5, 6]);
+console.log("O segundo maior número é ", resultado);
+
+//2. 
+
+alertFuture4 = () => {
+    alert("Hello Future4");
+}
+
+alertFuture4();
 
 

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta chaset="utf-8">
+        <title>Meu Blog</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <section>
+            <header>
+                <h2>Comente</h2>
+            </header>
+            
+            <form action="#">
+                <label>Autor</label>
+                <input id="autor"><br><br>
+                
+                <label>Assunto</label>
+                <input id="assunto"><br><br>
+            
+                <label>Mensagem</label>
+                <textarea id="mensagem"></textarea><br><br>
+
+                <button onclick="onButtonClick()">Criar</button>
+
+            </form>
+        </section>
+
+        <section>
+            <header>
+            <h2>Aqui está seu comentário</h2>
+            </header>
+
+            <div id="comentariosPostados">
+
+            </div>
+
+        </section>
+
+    </body>
+</html>

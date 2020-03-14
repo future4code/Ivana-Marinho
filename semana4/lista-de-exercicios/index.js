@@ -35,4 +35,15 @@ Quantidade total de números 14
 6
 8
 
+
+4.
+O que a função faz?
+A função calcula o maior e o menor número do array numeros.
+
+Como ela faz?
+Cria uma variável numero1 que recebe um valor infinito e outra numero2 que recebe o valor 0. Verifica se cada valor do array é menor que numero1, se for, numero1 recebe esse número. O próximo if, verifica se cada numero do array é maior que numero2 e se for, numero 2 recebe numero. Assim, o primeiro if descobre o menor número e o segundo o maior.
+
+O que será impresso no console?
+-10
+1590
 */

@@ -104,7 +104,7 @@ console.log("A diferença entre eles é ", diferenca);
 //Exercícios de Funções
 
 //1. Fiz em duas funções. Cada uma delas faz uma coisa específica.
-
+/*
 let maior = Infinity;
 let aux = 0;
 let elemento;
@@ -145,5 +145,62 @@ alertFuture4 = () => {
 }
 
 alertFuture4();
+*/
+
+//Exercícios de Objetos
+//1.
+/*
+Arrays são uma lista de elementos. Devemos usá-lo quando precisamos agrupar vários elementos em um único lugar. 
+Objetos são elementos que possuem características próprias. São uma construção da classe. Usamos quando precisamos descrever as características de alguma coisa do mundo real, como uma pessoa ou algum tipo de um animal, por exemplo.
+*/
+
+//2.
+
+function criaRetangulo(lado1, lado2){
+    return retangulo = {
+        largura: lado1,
+        altura: lado2,
+        perimetro: 2*(lado1 + lado2),
+        area: lado1 * lado2
+    };
+}
+
+const retanguloCriado = criaRetangulo(2, 3);
+console.log(retanguloCriado);
+
+
+//3.
+
+const filmeFavorito = {
+    titulo: 'A Ghost Story',
+    ano: 2017,
+    diretor: 'David Lowery',
+    elenco: ['Casey Affleck', 'Rooney Mara']
+}
+
+console.log("Venha assistir ao filme " + filmeFavorito.titulo + " de " + filmeFavorito.ano + ", dirigido por " + filmeFavorito.diretor + " e estrelado por " + filmeFavorito.elenco + ".");
+
+
+//4.
+
+const pessoa = {
+    nome: 'Maria',
+    idade: 20,
+    email: 'maria@gmail.com',
+    endereco: 'Rua do Comercio, 21'
+}
+
+anonimizarPessoa = (pessoa) => {
+    return anonimo = {
+        ...pessoa,
+        nome: 'Anônimo',
+    }
+}
+
+const pessoaAnonima = anonimizarPessoa(pessoa);
+console.log(pessoaAnonima);
+//console.log(pessoa); só para conferir se o objeto inicial está intacto
+
+
 
 

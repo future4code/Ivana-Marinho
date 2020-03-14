@@ -21,4 +21,18 @@ A função recebe dois parâmetros: tipo de investimento e valor. A função vai
 O que será impresso no console?
 165
 TIPO DE INVESTIMENTO INFORMADO INCORRETO!
+
+
+3.
+O que a função faz?
+Coloca os valores pares do array numeros no array1 e os ímpares no array2.
+
+Como ela faz?
+Percorre o array e faz uma verificação em cada numero. Se for par, manda pro array1, caso contrário, amnda pro array2.
+
+O que será impresso no console?
+Quantidade total de números 14
+6
+8
+
 */

@@ -71,7 +71,7 @@ O código funciona, mas não atende ao objetivo. Do jeito que foi feito, ele ent
 */
 
 //4.
-/*
+
 function classificaTriangulo(ladoA, ladoB, ladoC){
     if(ladoA === ladoB && ladoA === ladoC){
         console.log("O triângulo é equilátero");
@@ -99,12 +99,12 @@ if(numero1%numero2 === 0){
 
 let diferenca = Math.abs(numero1 - numero2);
 console.log("A diferença entre eles é ", diferenca);
-*/
+
 
 //Exercícios de Funções
 
 //1. Fiz em duas funções. Cada uma delas faz uma coisa específica.
-/*
+
 let maior = Infinity;
 let aux = 0;
 let elemento;
@@ -145,7 +145,7 @@ alertFuture4 = () => {
 }
 
 alertFuture4();
-*/
+
 
 //Exercícios de Objetos
 //1.
@@ -202,5 +202,148 @@ console.log(pessoaAnonima);
 //console.log(pessoa); só para conferir se o objeto inicial está intacto
 
 
+//Exercícios de Funções de Array
+
+//1.
+//a.
+
+const pessoas = [
+    { nome: "Pedro", idade: 20 },
+	{ nome: "João", idade: 10 },
+	{ nome: "Paula", idade: 12 },
+	{ nome: "Artur", idade: 89 } 
+]
+
+const idadeMaiorQue20 = pessoas.filter((pessoa, index, array) => {
+    if(pessoa.idade >= 20){
+        return {
+            nome: pessoa.nome,
+            idade: pessoa.idade
+        }
+    }
+});
+
+console.log(idadeMaiorQue20);
+
+//b.
+
+const pessoasMenoresDe20 = pessoas.filter((pessoa, index, array) => {
+    if(pessoa.idade < 20){
+        return {
+            nome: pessoa.nome,
+            idade: pessoa.idade
+        }
+    }
+});
+
+console.log(pessoasMenoresDe20);
 
 
+//2.
+
+const arrayDeTeste = [1, 2, 3, 4, 5, 6];
+//a.
+
+let dobraArray = arrayDeTeste.map((deTeste, index, array) => {
+    return deTeste * 2;
+});
+
+console.log(dobraArray);
+
+
+//b.
+
+const triplicaArray = arrayDeTeste.map((cadaNumeroDoArrayDeTeste, index, array) => {
+    let triplo = cadaNumeroDoArrayDeTeste * 3;
+    return `${triplo}`;
+});
+
+console.log(triplicaArray);
+
+
+//c.
+
+const arrayDeStrings = arrayDeTeste.map((numeroEmString, index, array) => {
+    if(numeroEmString%2 === 0){
+        return `${numeroEmString} é par`;
+    }else{
+        return `${numeroEmString} é ímpar`;
+    }
+});
+
+console.log(arrayDeStrings);
+
+
+//3.
+
+const pessoas1 = [
+	{ nome: "Paula", idade: 12, altura: 1.8},
+	{ nome: "João", idade: 20, altura: 1.3},
+	{ nome: "Pedro", idade: 15, altura: 1.9},
+	{ nome: "Luciano", idade: 22, altura: 1.8},
+	{ nome: "Artur", idade: 10, altura: 1.2},
+	{ nome: "Soter", idade: 70, altura: 1.9}
+];
+
+//a.
+
+const podemEntrar = pessoas1.filter((cadaPessoa, index, array) => {
+    if(cadaPessoa.altura >= 1.5 && cadaPessoa.idade > 14 && cadaPessoa.idade < 60){
+        return cadaPessoa;
+        }
+    });
+
+    console.log(podemEntrar);
+
+
+const naoPodemEntrar = pessoas1.filter((cadaPessoa, index, array) => {
+    if(cadaPessoa.altura < 1.5 || cadaPessoa.idade <= 14 || cadaPessoa.idade >= 60){
+        return cadaPessoa;
+    }
+});
+console.log(naoPodemEntrar);
+
+
+//4.
+
+const consultas = [
+	{ nome: "João", genero: "masculino", cancelada: true, dataDaConsulta: "01/10/2019" },
+	{ nome: "Pedro", genero: "masculino", cancelada: false, dataDaConsulta: "02/10/2019" },
+	{ nome: "Paula", genero: "feminino", cancelada: true, dataDaConsulta: "03/11/2019" },
+	{ nome: "Márcia", genero: "feminino", cancelada: false, dataDaConsulta: "04/11/2019" }
+];
+
+const consultaCanceladaOuNao = consultas.map((cadaConsulta, index, array) => {
+    if(cadaConsulta.cancelada === false && cadaConsulta.genero === 'masculino'){
+        return `Olá, Sr. ${cadaConsulta.nome}. Estamos enviando esta mensagem para lembrá-lo da sua consulta no dia ${cadaConsulta.dataDaConsulta}. Por favor, acuse o recebimento deste e-mail.`;
+    }else if(cadaConsulta.cancelada === false && cadaConsulta.genero === 'feminino'){
+        return `Olá, Sra. ${cadaConsulta.nome}. Estamos enviando esta mensagem para lembrá-la da sua consulta no dia ${cadaConsulta.dataDaConsulta}. Por favor, acuse o recebimento deste e-mail.`;
+    }else if(cadaConsulta.cancelada === true && cadaConsulta.genero === 'masculino'){
+        return `Olá, Sr. ${cadaConsulta.nome}. Infelizmente, sua consulta marcada para o dia ${cadaConsulta.dataDaConsulta} foi cancelada. Se quiser, pode entrar em contato conosco para remarcá-la.`;
+    }else if(cadaConsulta.cancelada === true && cadaConsulta.genero === 'feminino'){
+        return `Olá, Sra. ${cadaConsulta.nome}. Infelizmente, sua consulta marcada para o dia ${cadaConsulta.dataDaConsulta} foi cancelada. Se quiser, pode entrar em contato conosco para remarcá-la.`;
+    }
+});
+
+console.log(consultaCanceladaOuNao);
+
+
+//5.
+
+const contas = [
+	{ cliente: "João", saldoTotal: 1000, compras: [100, 200, 300] },
+	{ cliente: "Paula", saldoTotal: 7500, compras: [200, 1040] },
+	{ cliente: "Pedro", saldoTotal: 10000, compras: [5140, 6100, 100, 2000] },
+	{ cliente: "Luciano", saldoTotal: 100, compras: [100, 200, 1700] },
+	{ cliente: "Artur", saldoTotal: 1800, compras: [200, 300] },
+	{ cliente: "Soter", saldoTotal: 1200, compras: [] }
+];
+
+let novoSaldo;
+const atualizaSaldo = contas.forEach((conta, index, array) => {
+    novoSaldo = Number(prompt(`Digite o novo saldo de ${conta.cliente}`));
+    conta.saldoTotal = novoSaldo;
+    return conta.saldoTotal;
+});
+
+console.log(contas);

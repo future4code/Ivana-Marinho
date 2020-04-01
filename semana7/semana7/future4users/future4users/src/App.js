@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import axios from 'axios';
 import Registro from './Components/Registro.js';
 import Lista from './Components/Lista.js';

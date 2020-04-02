@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const urlBase = "https://us-central1-future-apis.cloudfunctions.net/api";
 
-const ComponenteLista = styled.li`
+const ComponentLista = styled.li`
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid black; 
@@ -58,10 +58,10 @@ class Lista extends React.Component{
                 <h2>Usuários Cadastrados</h2>
                 <ul>
                     {this.state.listaDeUsuarios.map((cadaUsuario) => {
-                        return( <ComponenteLista>
+                        return( <ComponentLista>
                             <p>{cadaUsuario.name}</p>
                             <BotaoDeletar onClick={() => this.deletarUsuario(cadaUsuario.id)}>X</BotaoDeletar>
-                        </ComponenteLista>
+                        </ComponentLista>
                         )}
                     )}
                 </ul>

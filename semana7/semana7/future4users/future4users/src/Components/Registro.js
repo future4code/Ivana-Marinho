@@ -33,7 +33,7 @@ class Registro extends React.Component{
         this.setState({emailValue: event.target.value})
     }
 
-    onClickSalvarDados = () => {
+    onClickSaveData = () => {
         console.log(this.state.nameValue);
         console.log(this.state.emailValue)
         const body = {
@@ -73,7 +73,7 @@ class Registro extends React.Component{
 
                 <br/>
 
-                <button onClick={this.onClickSalvarDados}>Salvar</button>
+                <button onClick={this.onClickSaveData}>Salvar</button>
             </Container>
     
         )

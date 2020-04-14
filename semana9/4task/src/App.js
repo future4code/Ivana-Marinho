@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import ListaDeTarefas from "./Componentes/ListaDeTarefas.js";
 import Filtro from "./Componentes/Filtro.js";
+import { connect } from "react-redux";
 
 const Titulo = styled.p`
   color: darkred;

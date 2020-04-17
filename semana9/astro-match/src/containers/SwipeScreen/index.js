@@ -78,7 +78,7 @@ SwipeScreen.propTypes = {
 }
 
 const mapStateToProps = (state) => ({
-	profileToSwipe: state.profiles.profilesToSwipe
+	profileToSwipe: state.profiles.profileToSwipe
 })
 
 const mapDispatchToProps = (dispatch) => {

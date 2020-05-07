@@ -17,8 +17,26 @@ class Planner extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleFormSubmit}>
-        <label></label>
+        <label>Segunda-feira</label>
         <input/>
+
+        <label>Terça-feira</label>
+        <input />
+
+        <label>Quarta-feira</label>
+        <input />
+
+        <label>Quinta-feira</label>
+        <input />
+
+        <label>Sexta-feira</label>
+        <input />
+
+        <label>Sábado</label>
+        <input />
+
+        <label>Domingo</label>
+        <input />
 
       </form>
     

@@ -3,7 +3,7 @@
   {
     "target": "es6",
     "module": "commonjs",
-    "outDir": "build",
+    "outDir": ".gitignore/build",
     "rootDir": "./src",
     "strict": true,
     "esModuleInterop": true,

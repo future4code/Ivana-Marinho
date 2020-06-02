@@ -1,0 +1,24 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const user_1 = require("./user");
+const customer_1 = require("./customer");
+const employee_1 = require("./employee");
+const seller_1 = require("./seller");
+const user1 = new user_1.User("1234", "user1@labenu.com", "labenauta", "123");
+console.log(`id: ${user1.getId()}, email: ${user1.getEmail()} e name: ${user1.getName()}`);
+const costumer1 = new customer_1.Customer("123", "costumer1@labenu.com", "Costumer1", "bananinha", "visa");
+console.log(costumer1);
+console.log(`Total da compra: ${costumer1.purchaseTotal} \n Cartão de crédito: ${costumer1.getCreditCard()}`);
+console.log(`A senha é: ${costumer1.getPassword()}`);
+console.log(costumer1.introduceYourself());
+console.log(costumer1.introduceYourself());
+const employee1 = new employee_1.Employee("135", "employee@labenu.com", "Employee", "maxixezinho", new Date("2020/01/01"), 10000);
+console.log(employee1);
+console.log(employee1.calculateTotalSalary());
+const seller1 = new seller_1.Seller("123", "donamaria@labenu.com", "Dona Maria", "minhasenha", new Date("2020/02/12"), 1200);
+console.log(seller1);
+seller1.setSalesQuantity(500);
+console.log(`O novo valor é ${seller1.getSalesQuantity()}`);
+const seller2 = new seller_1.Seller("456", "seuze@labenu.com", "Seu Ze", "kes", new Date("2020/02/12"), 2000);
+console.log(seller2.calculateTotalSalary());
+//# sourceMappingURL=index.js.map

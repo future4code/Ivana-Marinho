@@ -1,0 +1,19 @@
+{
+  "name": "f4bank",
+  "version": "1.0.0",
+  "description": "sistema de banco",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "ts-node ./src/index.ts"
+ 
+  },
+  "author": "Ivana",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^13.7.7",
+    "moment": "^2.26.0",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.3"
+  }
+}

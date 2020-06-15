@@ -1,0 +1,59 @@
+[
+  {
+    "id": "123",
+    "name": "Estudante1",
+    "email": "estudante1@labenu.com.br",
+    "dataDeNascimento": "1999-01-20T02:00:00.000Z",
+    "hobbies": [
+      "ler",
+      "assistir filmes de terror"
+    ]
+  },
+  {
+    "id": "999",
+    "name": "Estudante2",
+    "email": "estudante2@labenu.com.br",
+    "dataDeNascimento": "2000-03-02T03:00:00.000Z",
+    "hobbies": [
+      "jogar sinuca"
+    ]
+  },
+  {
+    "id": "123",
+    "name": "Estudante1",
+    "email": "estudante1@labenu.com.br",
+    "dataDeNascimento": "1999-01-20T02:00:00.000Z",
+    "hobbies": [
+      "ler",
+      "assistir filmes de terror"
+    ]
+  },
+  {
+    "id": "999",
+    "name": "Estudante2",
+    "email": "estudante2@labenu.com.br",
+    "dataDeNascimento": "2000-03-02T03:00:00.000Z",
+    "hobbies": [
+      "jogar sinuca"
+    ]
+  },
+  {
+    "id": "123",
+    "name": "Estudante1",
+    "email": "estudante1@labenu.com.br",
+    "dataDeNascimento": "1999-01-20T02:00:00.000Z",
+    "hobbies": [
+      "ler",
+      "assistir filmes de terror"
+    ]
+  },
+  {
+    "id": "999",
+    "name": "Estudante2",
+    "email": "estudante2@labenu.com.br",
+    "dataDeNascimento": "2000-03-02T03:00:00.000Z",
+    "hobbies": [
+      "jogar sinuca"
+    ]
+  }
+]
